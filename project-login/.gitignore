@@ -1,0 +1,9 @@
+.vscode
+
+#node Modules
+node-modules
+
+#local developement
+
+*.env
+.DS-Store
