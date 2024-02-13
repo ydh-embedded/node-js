@@ -2,7 +2,7 @@ const express   = require('express');
 const router    = express.Router()  ;
 const bcrypt    = require('bcryptjs')  ;
 const jwt       = require('jsonwebtoken')     ;                      /* jsonwebToken */
-const db        = require('../middleware/server.js');               /*  wir legen hier den relativen Pfad an weil es nicht mit nodejs installiert wurde */
+const db        = require('../lib/server.js');               /*  wir legen hier den relativen Pfad an weil es nicht mit nodejs installiert wurde */
 const userMW    = require('../middleware/user.js');
 const uuid      = require('uuid')   ;
 
