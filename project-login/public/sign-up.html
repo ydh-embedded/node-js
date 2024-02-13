@@ -4,51 +4,52 @@
     <meta charset="UTF-8">
     <title>regist</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="../js/xhrobject.js"></script>
-    <script src="../js/formular-ajax.js"></script>
+
+<!--     <script src="../js/xhrobject.js"></script> -->
+<!--     <script src="../js/formular-ajax.js"></script> -->
 </head>
 <body>
+<header><h2>Hier können Sie sich registrieren</h2></header>
 
-<h2>Hier können Sie sich registrieren</h2>
 
 <div class="card">
 
 
-<form action="/api/sign-up" methode="POST">
+    <form action="/api/sign-up" methode="POST">
+        
+        <div class="titel">User-ID:</div>
+            <input type="text" id="user" name="u">
+        <div id="userinfo" class="info"></div>
+        
+        <br>
+        
+        <div class="titel">Passwort:</div>
+            <input type="text" id="pw" name="p">
+        <div id="pwinfo" class="info"></div>
     
-    <div class="titel">User-ID:</div>
-        <input type="text" id="user" name="u">
-    <div id="userinfo" class="info"></div>
+        <br>
+        <div class="titel">Passwort:</div>
+            <input type="password" id="pw" name="p">
+        <div id="pwinfo" class="info"></div>
+        
+    </form>
+    </div>
     
-    <br>
     
-    <div class="titel">Passwort:</div>
-        <input type="text" id="pw" name="p">
-    <div id="pwinfo" class="info"></div>
-
-    <br>
-    <div class="titel">Passwort:</div>
-        <input type="password" id="pw" name="p">
-    <div id="pwinfo" class="info"></div>
+    <table>
+        <tr>
+            <td><button id="frage">Daten wegschicken</button></td>
+            <td>|</td>
+            <td><button id="zurueck">Zurücksetzen</button></td>
+            <td>|</td>
+            <td><button id="logout">LOGOUT</button></td>
+        </tr>
+    </table>
     
-</form>
-</div>
-
-
-<table>
-    <tr>
-        <td><button id="frage">Daten wegschicken</button></td>
-        <td>|</td>
-        <td><button id="zurueck">Zurücksetzen</button></td>
-        <td>|</td>
-        <td><button id="logout">LOGOUT</button></td>
-    </tr>
-</table>
-
-
-
-
-<div id="antwort"></div>
+    
+    
+    
+    <div id="antwort"></div>
     
 </body>
 </html>

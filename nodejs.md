@@ -20,8 +20,7 @@ PORT=5400
 
 ## NPM Manager install List
 
--   npm install @vue/cli
-    -   vue create client
+
 -   npm install express
 -   npm install body-parser
 -   npm install mysql
@@ -30,3 +29,11 @@ PORT=5400
 -   npm install jsonwebtoken
 -   npm install cors
 -   
+
+
+## vue frontend
+
+-   npm install -g @vue/cli
+    -   vue create client
+        -   Manually select features
+        -   npm install axios vues-persistedstate
