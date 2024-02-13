@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Webformular validieren</title>
+    <link rel="stylesheet" href="/project-login/public/lib/css/style.css">
+    <script src="../js/xhrobject.js"></script>
+    <script src="../js/formular-ajax.js"></script>
+</head>
+<body>
+
+<h1>Hier können Sie sich registrieren</h1>
+<form>
+    
+    <div class="titel">User-ID:</div>
+        <input type="text" id="user" name="u">
+    <div id="userinfo" class="info"></div>
+    
+    <br>
+    
+    <div class="titel">Passwort:</div>
+        <input type="text" id="pw" name="p">
+    <div id="pwinfo" class="info"></div>
+
+    <br>
+    <div class="titel">Passwort:</div>
+        <input type="password" id="pw" name="p">
+    <div id="pwinfo" class="info"></div>
+    
+</form>
+
+<hr>
+
+<button id="frage">Daten wegschicken</button>
+<button id="zurueck">Zurücksetzen</button>
+<button id="logout">LOGOUT</button>
+
+<div id="antwort"></div>
+    
+</body>
+</html>
