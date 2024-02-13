@@ -12,7 +12,7 @@ const app       = express();
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
-/* Route für den start */
-app.get('/' , (request, response, ) => {
+
+app.get('/' , (request, response, ) => {                  /* Route für den start */
     response.send('läuft');
 } );
