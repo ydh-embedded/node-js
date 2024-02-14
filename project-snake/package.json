@@ -1,0 +1,14 @@
+{
+  "name": "project-snake",
+  "version": "1.0.0",
+  "description": "Es wird mit nodejs ein Spiel generiert",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "snake"
+  ],
+  "author": "DHE",
+  "license": "MIT"
+}
