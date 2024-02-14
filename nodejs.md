@@ -18,7 +18,7 @@ DB_PASSWORT =   +Schenker1
 PORT=5400  
 
 
-## NPM Manager install List
+## NPM Manager install List backend
 
 
 -   npm install express

@@ -15,7 +15,7 @@ export default {
     signUp(credentials){
         return axios
             .post(url + '/sign-up/' , credentials)
-            .then(response = response.data);
+            .then(response => response.data);
     }   ,
 
 

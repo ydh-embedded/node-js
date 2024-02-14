@@ -28,7 +28,7 @@
         <tr>
             <td><button id="frage">Daten wegschicken</button></td>
             <td>|</td>
-            <td><input type="submit" @click="signUp" value="Registriesen"></td>
+            <td><input type="submit" @click="signUp" value="Registrieren"></td>
             <td>|</td>
             <td><button id="zurueck">Zurücksetzen</button></td>
             <td>|</td>
@@ -40,10 +40,43 @@
 
 
     <div id="antwort">
-        <p v-if="msg"></p>
+        <p v-if="msg">{{ msg }}</p>
     </div>
 
+<script>
+import { AuthService } from "@/services/AuthService.js";
+</script>
 
+
+<script>
+export default{
+    data(){
+        return {
+            username: '' ,
+            password: '' ,
+            password_repeat: '',
+            msg: ''
+        }
+    }   ,
+    methods: {
+        async signUp(){
+            try{
+                const credentials = {
+                    username: this.username ,
+                    password: this.password ,
+                    password_repeat: this.password_repeat ,
+                };
+                const response = await AuthService.signUp(credentials);
+                this.msg = response.msg
+            }
+            catch (error) {
+                this.msg = error.response.data.msg
+            }
+        }
+
+    }
+}
+</script>
 
 
 

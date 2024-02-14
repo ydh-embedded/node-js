@@ -1,8 +1,8 @@
-import Vue from "vue"           ;
-import Router from "vue-router" ;
-import HomeView from '../views/HomeView.vue' ;
-import Sign-Up from '../views/SignUp.vue' ;
-import Login from '../views/Login.vue' ;
+import Vue      from 'vue'                    ;
+import Router   from 'vue-router'             ;
+import HomeView from '../views/HomeView.vue'  ;
+import SignUp   from '../views/SignUp.vue'    ;
+import Login    from '../views/Login.vue'     ;
 
 Vue.useAttrs(Router);
 
@@ -26,5 +26,5 @@ export default new Router({
             name:"sign-up",
             component: Home
         }
-
-      ]
+    ]
+})
