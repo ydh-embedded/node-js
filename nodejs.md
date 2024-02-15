@@ -4,9 +4,9 @@ terminal öffnen und mit npm init
 
 [Heroku](https://www.heroku.com/nodejs)
 
-
 [dev](https://dev.to/webdeasy/complete-login-system-with-node-js-vue-js-restapi-jwt-part-1-2-1fm6)
 
+[expressJS](https://expressjs.com/de/)
 
 ## .env anlegen
 
@@ -17,9 +17,7 @@ DB_PASSWORT =   +Schenker1
 
 PORT=5400  
 
-
 ## NPM Manager install List backend
-
 
 -   npm install express
 -   npm install body-parser
@@ -28,8 +26,6 @@ PORT=5400
 -   npm install bcryptjs
 -   npm install jsonwebtoken
 -   npm install cors
--   
-
 
 ## vue frontend
 
